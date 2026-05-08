@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Gondim — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Partículas de fundo -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">GG<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Gabriel <span class="accent">Gondim</span></h1>
+      <div class="hero-title">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-description">
+        Software Engineer apaixonado por tecnologia, sempre em busca de aprender e explorar este universo infinito.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn btn-outline">Falar comigo</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/Gabrielfsg" target="_blank" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-gondim-34b5541b3/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:profissional.gabrielg@gmail.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">GG</span>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre mim</span>
+        <h2 class="section-title">Quem sou <span class="accent">eu?</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Sou um <strong>Software Engineer</strong> e desenvolvedor full-stack com mais de 4 anos de experiência, apaixonado por criar soluções robustas e escaláveis. Combino expertise em back-end Java/Spring com front-end Angular para construir aplicações completas de ponta a ponta.
+          </p>
+          <p>
+            Ao longo da carreira atuei em sistemas de gestão de RH, certificação digital, crédito, telecomunicações e gestão farmacêutica — sempre entregando integrações, otimizações de performance e novas funcionalidades em ambientes ágeis.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="34">0</span>
+              <span class="stat-label">Repositórios no GitHub</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Anos de experiência</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-label">Empresas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-code reveal">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+              <span class="code-filename">gabriel.json</span>
+            </div>
+            <pre class="code-body"><code><span class="c-brace">{</span>
+  <span class="c-key">"name"</span>: <span class="c-str">"Gabriel Gondim"</span>,
+  <span class="c-key">"role"</span>: <span class="c-str">"Software Engineer"</span>,
+  <span class="c-key">"backend"</span>: <span class="c-arr">[</span>
+    <span class="c-str">"Java"</span>, <span class="c-str">"Spring Boot"</span>,
+    <span class="c-str">"Kotlin"</span>, <span class="c-str">"RabbitMQ"</span>,
+    <span class="c-str">"Python"</span>, <span class="c-str">"REST APIs"</span>
+  <span class="c-arr">]</span>,
+  <span class="c-key">"frontend"</span>: <span class="c-arr">[</span><span class="c-str">"Angular"</span>, <span class="c-str">"TypeScript"</span><span class="c-arr">]</span>,
+  <span class="c-key">"database"</span>: <span class="c-arr">[</span><span class="c-str">"PostgreSQL"</span>, <span class="c-str">"MySQL"</span><span class="c-arr">]</span>,
+  <span class="c-key">"devops"</span>: <span class="c-arr">[</span><span class="c-str">"Docker"</span>, <span class="c-str">"AWS"</span>, <span class="c-str">"CI/CD"</span>, <span class="c-str">"Git"</span><span class="c-arr">]</span>,
+  <span class="c-key">"available"</span>: <span class="c-bool">true</span>
+<span class="c-brace">}</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// experiência</span>
+        <h2 class="section-title">Onde já <span class="accent">atuei</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Engenheiro de Software</h3>
+                <span class="timeline-company">Arista Digital</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-badge current">Atual</span>
+                <span class="timeline-period">dez 2024 – presente · 1a 6m</span>
+                <span class="timeline-location">Brasil · Remoto</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Responsável pela manutenção e desenvolvimento de novos módulos em sistemas de gestão de RH voltados para clientes com grande volume de dados. Atuação em integrações com APIs externas, melhorias contínuas, correção de bugs, otimização de performance e adequação a novas regras de negócio.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">RabbitMQ</span><span class="ptag">APIs REST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Bolsista — Desenvolvedor Backend</h3>
+                <span class="timeline-company">Polo de Inovação IFMG</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">mar 2024 – abr 2025 · 1a 2m</span>
+                <span class="timeline-location">Formiga, MG · Híbrido</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Design e desenvolvimento de um sistema de gestão de crédito. Projetei APIs REST, desenvolvi serviço de processamento de documentos com visão computacional e implementei módulo Python para extração de dados com OpenCV, OCR (Google Vision) e IA.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Python</span><span class="ptag">OpenCV</span><span class="ptag">Google Vision</span><span class="ptag">IA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Analista Desenvolvedor de Software</h3>
+                <span class="timeline-company">GFSIS</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">jul 2024 – dez 2024 · 6m</span>
+                <span class="timeline-location">Formiga, MG · Presencial</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Suporte e manutenção de sistemas de gestão corporativa para autoridades de certificação digital. Desenvolvi novas funcionalidades, integrações com APIs externas e implementei módulo de dashboards com métricas de vendas e estatísticas operacionais.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Dashboards</span><span class="ptag">APIs REST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Técnico de Sistema</h3>
+                <span class="timeline-company">EISA</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">set 2022 – abr 2023 · 8m</span>
+                <span class="timeline-location">Remoto</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Manutenção e suporte de sistemas no setor de telecomunicações. Desenvolvi novas funcionalidades, integrações com APIs internas e externas, e criei testes automatizados para garantir confiabilidade e integração contínua.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Testes Automatizados</span><span class="ptag">Telecom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Analista Programador Java</h3>
+                <span class="timeline-company">Reply</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">nov 2021 – jul 2022 · 9m</span>
+                <span class="timeline-location">Remoto</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Desenvolvimento e manutenção de sistemas de gestão farmacêutica (vendas, PDV, pedidos, agendamento). Projetei APIs REST, desenvolvi interfaces frontend responsivas, gerenciei deploys e criei pipelines de CI/CD para build e entrega contínua.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Angular</span><span class="ptag">CI/CD</span><span class="ptag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Estagiário de Desenvolvimento</h3>
+                <span class="timeline-company">Célula Web</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">mai 2021 – nov 2021 · 7m</span>
+                <span class="timeline-location">Formiga, MG</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Fábrica de software com sistemas para órgãos governamentais. Atuei em funcionalidades de emissão e assinatura digital de documentos, gestão de funcionários e controle de estoque. Backend com Java/Spring Boot, frontend Angular, testes unitários e metodologia Scrum.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Angular</span><span class="ptag">Scrum</span><span class="ptag">Assinatura Digital</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// habilidades</span>
+        <h2 class="section-title">Meu <span class="accent">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">⚙️</span> Back-end
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Kotlin</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">🎨</span> Front-end
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Angular</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">HTML/CSS</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">🗄️</span> Banco de Dados
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">☁️</span> Cloud & DevOps
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">Dart</span>
+        <span class="tag">Angular</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Docker</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">Git</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">REST API</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Google Vision</span>
+        <span class="tag">OCR</span>
+        <span class="tag">Flutter</span>
+        <span class="tag">Godot</span>
+        <span class="tag">GDScript</span>
+        <span class="tag">Scrum</span>
+        <span class="tag">Testes Automatizados</span>
+        <span class="tag">Microsserviços</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projetos</span>
+        <h2 class="section-title">Meus <span class="accent">Projetos</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">📱</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/contadorFesta-flutter" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Contador de Festa</h3>
+          <p class="project-desc">Aplicativo Flutter para calcular despesas de festa por pessoa, com memória de sessão.</p>
+          <div class="project-tags">
+            <span class="ptag">Flutter</span>
+            <span class="ptag">Dart</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🎮</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/Jogo-2d-com-Automatos-Finitos" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Jogo 2D com Autômatos</h3>
+          <p class="project-desc">Jogo 2D implementando máquinas de estados finitos com Godot Engine.</p>
+          <div class="project-tags">
+            <span class="ptag">Godot</span>
+            <span class="ptag">GDScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🧠</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/AFD-operations" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AFD Operations</h3>
+          <p class="project-desc">Ferramenta Python para manipulação de DFA: união, interseção e complemento.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Teoria da Computação</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🖥️</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/Prot-tipo-de-CMD-em-C" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Shell em C</h3>
+          <p class="project-desc">Shell minimalista escrito em C, desenvolvido como trabalho de Sistemas Operacionais.</p>
+          <div class="project-tags">
+            <span class="ptag">C</span>
+            <span class="ptag">Makefile</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🚀</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/ship-game2d" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Ship Game 2D</h3>
+          <p class="project-desc">Jogo arcade estilo shoot 'em up desenvolvido no Godot Engine.</p>
+          <div class="project-tags">
+            <span class="ptag">Godot</span>
+            <span class="ptag">GDScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">⚡</div>
+            <div class="project-links">
+              <a href="https://github.com/Gabrielfsg/Compiladores" target="_blank" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Compiladores</h3>
+          <p class="project-desc">Projeto acadêmico de teoria de compiladores com implementação prática em Python.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Compiladores</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/Gabrielfsg" target="_blank" class="btn btn-outline">Ver todos no GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contato</span>
+        <h2 class="section-title">Vamos <span class="accent">conversar?</span></h2>
+      </div>
+      <p class="contact-desc reveal">Estou disponível para novas oportunidades e projetos. Manda uma mensagem!</p>
+      <div class="contact-cards reveal">
+        <a href="mailto:profissional.gabrielg@gmail.com" class="contact-card">
+          <div class="contact-card-icon">✉️</div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">profissional.gabrielg@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/Gabrielfsg" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">github.com/Gabrielfsg</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-gondim-34b5541b3/" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">gabriel-gondim</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Desenvolvido por <span class="accent">Gabriel Gondim</span> &mdash; 2025</p>
+    <p class="footer-sub">Feito com muito ☕ e código</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
