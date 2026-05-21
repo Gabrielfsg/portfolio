@@ -105,6 +105,19 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => observer.observe(el));
 
+/* ===== EDUCATION PROGRESS BARS ===== */
+const eduObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.edu-progress-fill').forEach(fill => {
+        fill.style.width = fill.dataset.width + '%';
+      });
+      eduObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.edu-card-new').forEach(el => eduObserver.observe(el));
+
 /* ===== SKILL BARS ===== */
 const skillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
