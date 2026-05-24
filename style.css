@@ -885,15 +885,6 @@ a { text-decoration: none; color: inherit; }
   margin-top: 4px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .edu-card-new { grid-template-columns: 1fr; }
-  .edu-card-left { flex-direction: row; justify-content: flex-start; padding: 20px 24px 0; gap: 16px; }
-  .edu-card-divider { display: none; }
-  .edu-track { gap: 4px; }
-  .edu-track-line { min-width: 16px; }
-}
-
 /* ===== CERTIFICATIONS ===== */
 .certifications { background: var(--bg2); }
 
@@ -1348,6 +1339,7 @@ a { text-decoration: none; color: inherit; }
   .hero { padding: 120px 40px 80px; }
   .section { padding: 80px 40px; }
   .navbar, .navbar.scrolled { padding: 20px 40px; }
+  .edu-card-new { grid-template-columns: 140px 1px 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1379,4 +1371,12 @@ a { text-decoration: none; color: inherit; }
   .section { padding: 70px 24px; }
   .contact-card { min-width: unset; width: 100%; }
   .contact-cards { flex-direction: column; }
+
+  /* Education responsivo */
+  .edu-card-new { grid-template-columns: 1fr; }
+  .edu-card-left { flex-direction: row; justify-content: flex-start; padding: 20px 24px 12px; gap: 20px; }
+  .edu-card-divider { display: none; }
+  .edu-track { gap: 4px; padding: 0 8px; }
+  .edu-track-line { min-width: 14px; }
+  .edu-track-step span { font-size: 0.65rem; }
 }
