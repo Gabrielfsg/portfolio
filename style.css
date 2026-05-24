@@ -894,6 +894,143 @@ a { text-decoration: none; color: inherit; }
   .edu-track-line { min-width: 16px; }
 }
 
+/* ===== CERTIFICATIONS ===== */
+.certifications { background: var(--bg2); }
+
+.cert-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.cert-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+  max-width: 520px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cert-glow {
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,230,118,0.12) 0%, transparent 70%);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.cert-card:hover .cert-glow {
+  width: 300px; height: 300px;
+  top: -80px; right: -80px;
+  background: radial-gradient(circle, rgba(0,230,118,0.2) 0%, transparent 70%);
+}
+
+.cert-card:hover {
+  border-color: rgba(0,230,118,0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,230,118,0.12);
+}
+
+.cert-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cert-badge-icon {
+  width: 80px; height: 80px;
+  flex-shrink: 0;
+  position: relative;
+  filter: drop-shadow(0 0 12px rgba(0,230,118,0.4));
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.cert-card:hover .cert-badge-icon {
+  filter: drop-shadow(0 0 20px rgba(0,230,118,0.7));
+  transform: rotate(-5deg) scale(1.05);
+}
+
+.cert-badge-icon svg { width: 100%; height: 100%; }
+
+.cert-provider {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-provider-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cert-provider-tag {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.2);
+}
+
+.cert-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.cert-title.accent {
+  color: var(--accent) !important;
+  -webkit-text-fill-color: var(--accent) !important;
+}
+
+.cert-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-top: 8px;
+}
+
+.cert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.cert-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.cert-link-label {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  transition: letter-spacing 0.3s;
+}
+
+.cert-card:hover .cert-link-label { letter-spacing: 0.5px; }
+
 /* ===== SKILLS ===== */
 .skills { background: var(--bg); }
 
