@@ -1027,8 +1027,8 @@ a { text-decoration: none; color: inherit; }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin-bottom: 60px;
 }
 
@@ -1335,6 +1335,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 40px; }
   .hero { padding: 120px 40px 80px; }
   .section { padding: 80px 40px; }

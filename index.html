@@ -116,14 +116,12 @@
             <pre class="code-body"><code><span class="c-brace">{</span>
   <span class="c-key">"name"</span>: <span class="c-str">"Gabriel Gondim"</span>,
   <span class="c-key">"role"</span>: <span class="c-str">"Software Engineer"</span>,
-  <span class="c-key">"backend"</span>: <span class="c-arr">[</span>
-    <span class="c-str">"Java"</span>, <span class="c-str">"Spring Boot"</span>,
-    <span class="c-str">"Kotlin"</span>, <span class="c-str">"RabbitMQ"</span>,
-    <span class="c-str">"Python"</span>, <span class="c-str">"REST APIs"</span>
-  <span class="c-arr">]</span>,
-  <span class="c-key">"frontend"</span>: <span class="c-arr">[</span><span class="c-str">"Angular"</span>, <span class="c-str">"TypeScript"</span><span class="c-arr">]</span>,
-  <span class="c-key">"database"</span>: <span class="c-arr">[</span><span class="c-str">"PostgreSQL"</span>, <span class="c-str">"MySQL"</span><span class="c-arr">]</span>,
-  <span class="c-key">"devops"</span>: <span class="c-arr">[</span><span class="c-str">"Docker"</span>, <span class="c-str">"AWS"</span>, <span class="c-str">"CI/CD"</span>, <span class="c-str">"Git"</span><span class="c-arr">]</span>,
+  <span class="c-key">"langs"</span>: <span class="c-arr">[</span><span class="c-str">"Java"</span>, <span class="c-str">"Kotlin"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"TypeScript"</span>, <span class="c-str">"Groovy"</span><span class="c-arr">]</span>,
+  <span class="c-key">"backend"</span>: <span class="c-arr">[</span><span class="c-str">"Spring Boot"</span>, <span class="c-str">"RabbitMQ"</span>, <span class="c-str">"JUnit"</span>, <span class="c-str">"Flask"</span><span class="c-arr">]</span>,
+  <span class="c-key">"frontend"</span>: <span class="c-arr">[</span><span class="c-str">"Angular"</span>, <span class="c-str">"React"</span>, <span class="c-str">"PrimeNG"</span><span class="c-arr">]</span>,
+  <span class="c-key">"cloud"</span>: <span class="c-arr">[</span><span class="c-str">"AWS"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"Jenkins"</span><span class="c-arr">]</span>,
+  <span class="c-key">"db"</span>: <span class="c-arr">[</span><span class="c-str">"PostgreSQL"</span>, <span class="c-str">"Redis"</span>, <span class="c-str">"Elasticsearch"</span><span class="c-arr">]</span>,
+  <span class="c-key">"ai"</span>: <span class="c-arr">[</span><span class="c-str">"OpenCV"</span>, <span class="c-str">"GPT API"</span>, <span class="c-str">"LLaMA"</span><span class="c-arr">]</span>,
   <span class="c-key">"available"</span>: <span class="c-bool">true</span>
 <span class="c-brace">}</span></code></pre>
           </div>
@@ -500,74 +498,115 @@
         <h2 class="section-title">Meu <span class="accent">Stack</span></h2>
       </div>
       <div class="skills-grid">
+
         <div class="skill-category reveal">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">⚙️</span> Back-end
-          </h3>
+          <h3 class="skill-cat-title"><span class="skill-icon">🔤</span> Linguagens</h3>
           <div class="skill-items">
-            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Kotlin</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Kotlin</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">TypeScript / JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Groovy</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
           </div>
         </div>
+
         <div class="skill-category reveal">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">🎨</span> Front-end
-          </h3>
+          <h3 class="skill-cat-title"><span class="skill-icon">⚙️</span> Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">REST APIs / Microsserviços</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><span class="skill-name">RabbitMQ</span><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JUnit / Cucumber</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Flask / Grails</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="skill-icon">🎨</span> Frontend</h3>
           <div class="skill-items">
             <div class="skill-item"><span class="skill-name">Angular</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
-            <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
-            <div class="skill-item"><span class="skill-name">HTML/CSS</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">HTML5 / CSS3</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-item"><span class="skill-name">PrimeNG / PrimeFaces</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JSP</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
           </div>
         </div>
+
         <div class="skill-category reveal">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">🗄️</span> Banco de Dados
-          </h3>
+          <h3 class="skill-cat-title"><span class="skill-icon">☁️</span> Cloud & DevOps</h3>
           <div class="skill-items">
-            <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
-            <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">AWS (EC2, S3, Lambda)</span><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Jenkins</span><div class="skill-bar"><div class="skill-fill" data-width="68"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Azure DevOps</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+            <div class="skill-item"><span class="skill-name">CI/CD Pipelines</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
           </div>
         </div>
+
         <div class="skill-category reveal">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">☁️</span> Cloud & DevOps
-          </h3>
+          <h3 class="skill-cat-title"><span class="skill-icon">🗄️</span> Bancos de Dados</h3>
           <div class="skill-items">
-            <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">PostgreSQL / MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MariaDB</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Redis</span><div class="skill-bar"><div class="skill-fill" data-width="68"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Elasticsearch</span><div class="skill-bar"><div class="skill-fill" data-width="62"></div></div></div>
           </div>
         </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="skill-icon">🤖</span> IA / ML & Outros</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">OpenCV / Tesseract OCR</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">API GPT / LLaMA</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Git / GitFlow</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Maven / Gradle</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Scrum</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          </div>
+        </div>
+
       </div>
 
       <div class="tech-tags">
         <span class="tag">Java</span>
-        <span class="tag">Spring Boot</span>
         <span class="tag">Kotlin</span>
         <span class="tag">Python</span>
-        <span class="tag">C</span>
-        <span class="tag">Dart</span>
-        <span class="tag">Angular</span>
         <span class="tag">TypeScript</span>
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">MySQL</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Groovy</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">Microsserviços</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">Swagger / OpenAPI</span>
+        <span class="tag">JUnit</span>
+        <span class="tag">Cucumber</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Grails</span>
+        <span class="tag">React</span>
+        <span class="tag">Angular</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">PrimeNG</span>
+        <span class="tag">JSP</span>
         <span class="tag">AWS</span>
         <span class="tag">Docker</span>
+        <span class="tag">Jenkins</span>
+        <span class="tag">Azure DevOps</span>
         <span class="tag">CI/CD</span>
-        <span class="tag">Git</span>
-        <span class="tag">RabbitMQ</span>
-        <span class="tag">REST API</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">MariaDB</span>
+        <span class="tag">Redis</span>
+        <span class="tag">Elasticsearch</span>
         <span class="tag">OpenCV</span>
-        <span class="tag">Google Vision</span>
-        <span class="tag">OCR</span>
-        <span class="tag">Flutter</span>
-        <span class="tag">Godot</span>
-        <span class="tag">GDScript</span>
+        <span class="tag">Tesseract OCR</span>
+        <span class="tag">API GPT</span>
+        <span class="tag">LLaMA</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitFlow</span>
+        <span class="tag">Maven</span>
+        <span class="tag">Gradle</span>
         <span class="tag">Scrum</span>
-        <span class="tag">Testes Automatizados</span>
-        <span class="tag">Microsserviços</span>
       </div>
     </div>
   </section>
