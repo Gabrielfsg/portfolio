@@ -37,5 +37,5 @@ Basta abrir o arquivo `index.html` no navegador — não requer servidor ou inst
 ## Contato
 
 - GitHub: [github.com/Gabrielfsg](https://github.com/Gabrielfsg)
-- LinkedIn: [linkedin.com/in/gabriel-gondim-34b5541b3](https://www.linkedin.com/in/gabriel-gondim-34b5541b3/)
+- LinkedIn: [linkedin.com/in/gabrielfsgondim](https://www.linkedin.com/in/gabrielfsgondim/)
 - Email: profissional.gabrielg@gmail.com
