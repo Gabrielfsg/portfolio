@@ -624,6 +624,31 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 16px;
 }
 
+.timeline-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.timeline-list li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.timeline-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.8rem;
+  top: 1px;
+}
+
 /* ===== EDUCATION ===== */
 .education { background: var(--bg); }
 
