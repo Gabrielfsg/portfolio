@@ -1,3 +1,22 @@
+/* ===== DYNAMIC JOB DURATION ===== */
+function calcDuration(startYear, startMonth) {
+  const now = new Date();
+  let years = now.getFullYear() - startYear;
+  let months = now.getMonth() + 1 - startMonth;
+  if (months < 0) { years--; months += 12; }
+
+  let parts = [];
+  if (years > 0) parts.push(years + (years === 1 ? ' ano' : ' anos'));
+  if (months > 0) parts.push(months + (months === 1 ? ' mês' : ' meses'));
+  if (parts.length === 0) parts.push('menos de 1 mês');
+  return parts.join(' e ');
+}
+
+const fotonEl = document.getElementById('foton-duration');
+if (fotonEl) {
+  fotonEl.textContent = 'mai 2026 – presente · ' + calcDuration(2026, 5);
+}
+
 /* ===== PARTICLES ===== */
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
